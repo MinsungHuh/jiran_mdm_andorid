@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "net.chrisdev.jiran_mdm"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "net.chrisdev.jiran_mdm"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-
+    implementation(files("./libs/MDMLib_3_0_2_24.aar")) // 지란지교 MDM AAR Library 추가
     implementation("androidx.core:core-ktx:1.13.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
